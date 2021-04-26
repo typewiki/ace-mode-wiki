@@ -2,11 +2,12 @@
   "name": "ace-mode-wiki",
   "version": "0.1.0",
   "description": "Wiki-markup syntax highlight mode for Ace Editor",
-  "main": "index.js",
+  "main": "dist/main.js",
   "author": "Vitaly Pereslavtsev <dev@pereslavtsev.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "webpack -w"
   },
   "devDependencies": {
     "@babel/core": "^7.13.16",

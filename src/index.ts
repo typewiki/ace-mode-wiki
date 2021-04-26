@@ -1,4 +1,4 @@
-ace.define("ace/mode/example", function (require, exports, module) {
+ace.define("ace/mode/example", function (require, exports) {
   const oop = require("ace/lib/oop");
   const TextMode = require("ace/mode/text").Mode;
   const ExampleHighlightRules = require("ace/mode/example_highlight_rules")
@@ -16,19 +16,16 @@ ace.define("ace/mode/example", function (require, exports, module) {
   exports.Mode = Mode;
 });
 
-ace.define(
-  "ace/mode/example_highlight_rules",
-  function (require, exports, module) {
-    const oop = require("ace/lib/oop");
-    const TextHighlightRules = require("ace/mode/text_highlight_rules")
-      .TextHighlightRules;
+ace.define("ace/mode/example_highlight_rules", function (require, exports) {
+  const oop = require("ace/lib/oop");
+  const TextHighlightRules = require("ace/mode/text_highlight_rules")
+    .TextHighlightRules;
 
-    const ExampleHighlightRules = function () {
-      this.$rules = new TextHighlightRules().getRules();
-    };
+  const ExampleHighlightRules = function () {
+    this.$rules = new TextHighlightRules().getRules();
+  };
 
-    oop.inherits(ExampleHighlightRules, TextHighlightRules);
+  oop.inherits(ExampleHighlightRules, TextHighlightRules);
 
-    exports.ExampleHighlightRules = ExampleHighlightRules;
-  }
-);
+  exports.ExampleHighlightRules = ExampleHighlightRules;
+});
