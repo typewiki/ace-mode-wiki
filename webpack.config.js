@@ -7,6 +7,9 @@ module.exports = {
     minimize: false,
   },
   entry: path.join(__dirname, "src", "index.ts"),
+  resolve: {
+    extensions: [".ts", ".js", ".json"],
+  },
   module: {
     rules: [
       {
