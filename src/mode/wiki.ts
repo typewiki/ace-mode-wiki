@@ -14,7 +14,7 @@ ace.define("ace/mode/example", function (require, exports) {
   oop.inherits(Mode, TextMode);
 
   (function () {
-    // Extra logic goes here. (see below)
+    // Extra logic goes here.g (see below)
   }.call(Mode.prototype));
 
   exports.Mode = Mode;
